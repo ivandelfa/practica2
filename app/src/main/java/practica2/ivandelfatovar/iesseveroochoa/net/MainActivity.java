@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnAgenda;
     Button btnAgendaConstraint;
+    Button btnReceta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
     });
+        btnReceta = (Button)findViewById(R.id.btnReceta);
+
+        btnReceta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View e) {
+                Intent intent = new Intent(MainActivity.this, RecetaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 }
 }
