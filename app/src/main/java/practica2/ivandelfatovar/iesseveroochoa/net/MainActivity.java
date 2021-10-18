@@ -10,23 +10,32 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button btnAgenda;
+    Button btnAgendaConstraint;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnAgenda =(Button)findViewById(R.id.btnAgenda);
+        btnAgenda = (Button)findViewById(R.id.btnAgenda);
 
         btnAgenda.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View f) {
                 Intent intent = new Intent(MainActivity.this, AgendaActivity.class);
                 startActivity(intent);
             }
         });
 
-    }
+        btnAgendaConstraint = (Button)findViewById(R.id.btnAgendaConstraint);
 
+        btnAgendaConstraint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AgendaConstraintActivity.class);
+                startActivity(intent);
+            }
+    });
 
+}
 }
