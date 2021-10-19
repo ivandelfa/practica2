@@ -18,6 +18,7 @@ public class AgendaActivity extends AppCompatActivity {
     TextView tvNombre;
     TextView tvApellidos;
     TextView tvNuevoContacto;
+    Button btnSalir;
 
 
 
@@ -35,13 +36,25 @@ public class AgendaActivity extends AppCompatActivity {
         btnReiniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Le asignamos al boton un conjunto de métodos para asi borrar la información de ellos
                 txtNombre.setText("");
                 txtEmail.setText("");
                 txtApellidos.setText("");
                 txtTeléfono.setText("");
             }
         });
+        //Boton Salir
+        btnSalir = findViewById(R.id.btnSalir); //Declaramos el botón y le asignamos la función findview
+        btnSalir.setOnClickListener(new View.OnClickListener() { //Con esta funcion
+            @Override
+            public void onClick(View y) {
+                finish(); //Y finalizamos el proceso
+            }
+        });
+
         //Boton Aceptar
+
+
 
 
 

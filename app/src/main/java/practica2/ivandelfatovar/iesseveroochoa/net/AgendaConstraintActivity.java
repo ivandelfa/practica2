@@ -26,6 +26,7 @@ public class AgendaConstraintActivity extends AppCompatActivity {
                 Toast.makeText(AgendaConstraintActivity.this, (CharSequence) txtTelefonoConstraint, Toast.LENGTH_SHORT).show();
             }
         });
+        //boton Cancel
         btnCancel = findViewById(R.id.btnCancel); //Realizamos la misma operacion que anteriormente hemos hecho en el activity agenda
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
