@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnAgenda = (Button)findViewById(R.id.btnAgenda);  //
+        btnAgenda = (Button)findViewById(R.id.btAgenda);  //
 
         btnAgenda.setOnClickListener(new View.OnClickListener() { //Declaramos el metodo
             @Override
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnAgendaConstraint = (Button)findViewById(R.id.btnAgendaConstraint);
+        btnAgendaConstraint = (Button)findViewById(R.id.btAgendaConstraint);
 
         btnAgendaConstraint.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
     });
-        btnReceta = (Button)findViewById(R.id.btnReceta);
+        btnReceta = (Button)findViewById(R.id.btReceta);
 
         btnReceta.setOnClickListener(new View.OnClickListener() {
             @Override

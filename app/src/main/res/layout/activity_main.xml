@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ED805D"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -11,25 +12,26 @@
         android:id="@+id/tvNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:fontFamily="sans-serif-black"
         android:text="Iván Delfa Tovar"
         android:textSize="32sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnAgenda"
+        android:id="@+id/btAgenda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Agenda" />
 
     <Button
-        android:id="@+id/btnAgendaConstraint"
+        android:id="@+id/btAgendaConstraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Agenda-Constraint" />
 
     <Button
-        android:id="@+id/btnReceta"
+        android:id="@+id/btReceta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Receta" />

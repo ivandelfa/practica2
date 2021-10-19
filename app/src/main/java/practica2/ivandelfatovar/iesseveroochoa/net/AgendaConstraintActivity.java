@@ -10,24 +10,25 @@ import android.widget.Toast;
 
 public class AgendaConstraintActivity extends AppCompatActivity {
 
-    Button btnOk;
-    EditText txtTelefonoConstraint;
-    Button btnCancel;
+    Button btOk;
+    EditText etNombreConstraint;
+    Button btCancel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agenda_constraint);
 
-        btnOk = findViewById(R.id.btnOk); //Relaciono el boton con mi objeto
-        btnOk.setOnClickListener(new View.OnClickListener() {
+        btOk = findViewById(R.id.btOk); //Relaciono el boton con mi objeto
+        btOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
                 //Agrego el objeto Toast para que me devuelva lo que hay almacenado en el Edit Text de Nombre
-                Toast.makeText(AgendaConstraintActivity.this, (CharSequence) txtTelefonoConstraint, Toast.LENGTH_SHORT).show();
+                Toast.makeText(AgendaConstraintActivity.this, (CharSequence) etNombreConstraint, Toast.LENGTH_LONG).show();
             }
         });
-        btnCancel = findViewById(R.id.btnCancel); //Realizamos la misma operacion que anteriormente hemos hecho en el activity agenda
-        btnCancel.setOnClickListener(new View.OnClickListener() {
+        //boton Cancel
+        btCancel = findViewById(R.id.btCancel); //Realizamos la misma operacion que anteriormente hemos hecho en el activity agenda
+        btCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View g) {
                 finish();
