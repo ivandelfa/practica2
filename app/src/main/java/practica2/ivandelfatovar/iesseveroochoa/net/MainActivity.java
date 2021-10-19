@@ -9,18 +9,18 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnAgenda;
-    Button btnAgendaConstraint;
-    Button btnReceta;
+    Button btnAgenda; //Declaramos el botón agenda
+    Button btnAgendaConstraint; //Declaramos el botón Agenda Constraint
+    Button btnReceta; //Declaramos el botón Receta
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnAgenda = (Button)findViewById(R.id.btnAgenda);
+        btnAgenda = (Button)findViewById(R.id.btnAgenda);  //
 
-        btnAgenda.setOnClickListener(new View.OnClickListener() {
+        btnAgenda.setOnClickListener(new View.OnClickListener() { //Declaramos el metodo
             @Override
             public void onClick(View f) {
                 Intent intent = new Intent(MainActivity.this, AgendaActivity.class);

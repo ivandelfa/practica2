@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Nuevo Contacto"
+        android:text="@string/nuevo_contacto"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -26,7 +26,7 @@
             android:id="@+id/tvNombreAgenda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre" />
+            android:text="@string/nombre" />
 
         <EditText
             android:id="@+id/txtNombre"
@@ -44,7 +44,7 @@
             android:id="@+id/tvApellidos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apellidos" />
+            android:text="@string/apellidos" />
 
         <EditText
             android:id="@+id/txtApellidos"
@@ -63,13 +63,14 @@
             android:id="@+id/tvEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="e-mail" />
+            android:text="@string/e_mail" />
 
         <EditText
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -81,7 +82,7 @@
             android:id="@+id/tvTelefono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Telefono" />
+            android:text="@string/telefono" />
 
         <EditText
             android:id="@+id/txtTeléfono"
@@ -101,7 +102,7 @@
             android:id="@+id/tvNotas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Notas" />
+            android:text="@string/notas" />
 
         <EditText
             android:id="@+id/txtNotas"
