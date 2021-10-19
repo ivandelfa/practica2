@@ -15,6 +15,7 @@
         android:layout_gravity="center"
         android:fontFamily="sans-serif-black"
         android:text="Iván Delfa Tovar"
+        android:layout_gravity="center"
         android:textSize="32sp"
         android:textStyle="bold" />
 
